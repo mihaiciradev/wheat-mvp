@@ -1,0 +1,47 @@
+[project]
+name = "wheat-mvp"
+version = "0.1.0"
+description = "Measurement tools for wheat microplot establishment. Phase 0 does not produce agronomic results."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115",
+  "numpy>=2",
+  "opencv-python-headless>=4.10",
+  "pillow>=11",
+  "pydantic>=2.10",
+  "python-multipart>=0.0.12",
+  "scikit-image>=0.24",
+  "uvicorn>=0.32",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx2>=2.16",
+  "pytest>=8",
+  "ruff>=0.8",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["apps/api/src", "packages/vision/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["apps/api/src", "packages/vision/src", "tests"]
+extend-exclude = [".venv", "node_modules", "apps/web/.next", "var"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["wheat_api", "wheat_vision", "tests"]
