@@ -38,4 +38,4 @@ Phase 1 image feasibility, after real photographs and the four answers in `docs/
 
 ## Environment
 
-The linked Cloud Agent environment is personal and dashboard-managed. It has no finished build, so this session started from the default image and installed dependencies with `scripts/cloud-agent-install.sh`. A saved install script for later agents is proposed separately and does not apply until that proposal is saved.
+The linked Cloud Agent environment is personal and dashboard-managed. This session started from the default image. `scripts/cloud-agent-install.sh` was then verified on draft build `bld-20261110-4ab7a151-c120-4b0e-a068-9392e65a44c2` (branch `cursor/phase-0-foundation-ef2d`): a fresh agent on that build imported the packages and passed the same 17 tests. That build cannot be saved as the active environment because it is not from `main`. The install command is proposed for review. It applies to later agents only after it is saved, and a default-branch build can be promoted only once this scaffold is on `main`. There is no per-boot server.
