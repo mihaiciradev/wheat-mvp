@@ -1,6 +1,6 @@
 # Hosting the website on Vercel
 
-The first Vercel project is `apps/web` only: the overview and the technical notes. The FastAPI analysis service is not part of this deploy. No environment variables are required for these two pages.
+The first Vercel project is `apps/web` only: the Fenia landing page and the technical approach. The FastAPI analysis service is not part of this deploy. No environment variables are required for these two pages.
 
 Set **Root Directory** to `apps/web` in the Vercel project settings. That value is not valid inside `vercel.json`; Vercel rejects the file if `rootDirectory` is added there.
 
@@ -12,7 +12,7 @@ Set **Root Directory** to `apps/web` in the Vercel project settings. That value 
 4. Set **Root Directory** to `apps/web`. If the importer shows the repository root, choose Edit and select `apps/web`. Do not put that path in `vercel.json`.
 5. Framework preset: **Next.js**. Build command: `npm run build`. Install command: `npm install`. Leave the output directory empty so Next.js uses its default.
 6. Do not add env vars for this site.
-7. Deploy from `main`. Open `/` and `/tech` on the production URL.
+7. Deploy from `main`. Open `/` and `/approach` on the production URL. `/tech` redirects to `/approach`.
 
 Both pages should describe the product and should not show a coverage number.
 

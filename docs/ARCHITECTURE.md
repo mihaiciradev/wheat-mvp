@@ -35,7 +35,7 @@ flowchart LR
 | `GET /api/v1/capabilities` | Lists each measurement as experimental or unavailable |
 | `POST /api/v1/images/quality` | Provisional blur and exposure flags, max 30 MB, stateless |
 | `analyze_image` | Quality plus unavailable agronomic fields |
-| Web pages `/` and `/tech` | Explain the product and the measurement rules. They do not analyze images. |
+| Web pages `/` and `/approach` | Public Fenia site. The landing names no crop. The technical approach names sunflower and wheat. `/tech` redirects to `/approach`. |
 
 Uploads are not stored yet. Persisting an image without a microplot record would create orphan files.
 

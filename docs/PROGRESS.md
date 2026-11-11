@@ -9,7 +9,7 @@ Phase 0 foundation is in the working tree:
 - `wheat_vision` image loading, EXIF orientation, provisional quality flags, and an analysis result that abstains.
 - FastAPI `/health`, `/api/v1/capabilities`, and `POST /api/v1/images/quality`.
 - Local image-store implementation, not yet used by a route.
-- Next.js overview (`/`) and technical notes (`/tech`). Hosting steps are in `docs/VERCEL.md`. The analysis API is not deployed.
+- Fenia landing at `/` and technical approach at `/approach`. `/tech` redirects there. Hosting steps are in `docs/VERCEL.md`. The analysis API is not deployed.
 - Pytest, Ruff, ESLint, TypeScript, and `scripts/smoke.sh`.
 - GitHub Actions workflow at `.github/workflows/ci.yml`.
 

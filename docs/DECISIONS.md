@@ -59,3 +59,9 @@ The Cloud Agent image has Node 22 and Python 3.12. The web app uses Next.js 16.4
 Date: 2026-11-11
 
 The Next.js pages can be hosted on Vercel by themselves. The FastAPI and OpenCV service stays local until a measurement is ready to run for a user. Putting the computer-vision process on a host now would add cost and a deployment without a result to serve. The Vercel project root is `apps/web`, set in the dashboard. `vercel.json` cannot contain `rootDirectory`.
+
+## D11. The public site is Fenia, not a wheat-only page
+
+Date: 2026-11-11
+
+`fenia.ro` is the company site. The landing page describes field measurements from photographs and does not name a crop. Sunflower and wheat are named only on Technical approach. The wheat microplot work remains the first measurement product, and later crops reuse that approach.

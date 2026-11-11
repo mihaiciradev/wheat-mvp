@@ -8,16 +8,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Wheat Monitoring",
-    template: "%s · Wheat Monitoring",
+    default: "Fenia",
+    template: "%s · Fenia",
   },
-  description: "Research tool for measuring wheat establishment in microplots.",
+  description: "Photographs of research plots, turned into measurements you can check.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <div className="grid-field" aria-hidden="true" />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
