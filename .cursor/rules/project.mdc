@@ -1,0 +1,14 @@
+---
+description: Measurement integrity and scope for the wheat microplot MVP
+alwaysApply: true
+---
+
+This is an agricultural measurement tool. Accuracy and abstention matter more than a complete-looking demo.
+
+- Do not invent coverage, gaps, counts, density, greenness, or scale. Use an unavailable status and a reason.
+- Do not call generic green vegetation "wheat" unless weeds were excluded.
+- Physical units require a valid calibration. A visible plot border is not a calibration by itself.
+- Do not train models or create AWS resources unless the owner explicitly approved that action.
+- Keep raw images, predictions, human corrections, and ground truth separate.
+- Keep `packages/vision` testable without the web app and without cloud services.
+- Do not commit secrets, field photographs, or generated analysis artifacts.

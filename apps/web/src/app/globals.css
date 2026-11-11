@@ -1,0 +1,180 @@
+:root {
+  color: #1c1915;
+  background: #f3eee4;
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  line-height: 1.55;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #6d4e1e;
+}
+
+a:hover {
+  color: #3f2c0f;
+}
+
+a:focus-visible {
+  outline: 2px solid #6d4e1e;
+  outline-offset: 3px;
+}
+
+.site-header,
+.site-footer,
+main {
+  width: min(68rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1.25rem 0 1rem;
+  border-bottom: 1px solid #ddd3c4;
+}
+
+.brand {
+  color: inherit;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+
+nav a {
+  color: #3f382f;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  color: #6d4e1e;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+main {
+  padding: 2.25rem 0 3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  max-width: 18ch;
+  margin: 0.2rem 0 0.8rem;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #6b6256;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 42rem;
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+section {
+  margin-top: 2.25rem;
+}
+
+p,
+li {
+  max-width: 42rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.card,
+.notice {
+  padding: 1rem 1rem 0.2rem;
+  background: #fffdf8;
+  border: 1px solid #e4d9c8;
+}
+
+.card p,
+.notice p {
+  max-width: none;
+}
+
+.stages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.stages li {
+  max-width: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #e4d9c8;
+}
+
+.text-link {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  padding: 1rem 0 2rem;
+  border-top: 1px solid #ddd3c4;
+  color: #5c564c;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 0.92rem;
+}
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}
