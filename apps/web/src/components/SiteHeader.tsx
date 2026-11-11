@@ -3,10 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [
-  { href: "/", label: "Overview" },
-  { href: "/tech", label: "Technical notes" },
-];
+const links = [{ href: "/approach", label: "Technical approach" }];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -14,7 +11,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/">
-        Wheat Monitoring
+        Fenia
       </Link>
       <nav aria-label="Site">
         {links.map((link) => {

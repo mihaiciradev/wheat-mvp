@@ -1,10 +1,7 @@
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <p>
-        Research tool for wheat microplots. These pages describe the product. They do not analyze
-        photographs and they do not publish field results.
-      </p>
+      <p>Fenia. Measurements from photographs. No field results are published here yet.</p>
     </footer>
   );
 }
