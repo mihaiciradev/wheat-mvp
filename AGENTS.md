@@ -14,6 +14,7 @@ The Boss owns product understanding, architecture, milestone order, integration,
 - Do not treat synthetic fixtures or visual inspection as field accuracy.
 - Update `docs/DECISIONS.md` when a structural choice changes, and `docs/PROGRESS.md` when a milestone moves.
 - Integrate subagent work yourself. Check that API schemas, the vision result types, and the UI use the same measurement statuses.
+- After the checks on a pull request pass, merge it. The owner asked for this on 11 November 2026. Do not wait for them to press merge. Leave a pull request open when checks fail or the owner says to hold that one.
 
 Delegate only when the task is real work for that specialty. Do trivial edits directly.
 
