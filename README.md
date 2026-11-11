@@ -8,7 +8,7 @@ Software for measuring how wheat has established in small, delimited microplots.
 
 | Path | Role |
 | --- | --- |
-| `apps/web` | Next.js placeholder for researchers |
+| `apps/web` | Next.js overview and technical notes |
 | `apps/api` | FastAPI |
 | `packages/vision` | Image pipeline, usable without the API |
 | `docs` | Product, architecture, and decisions |

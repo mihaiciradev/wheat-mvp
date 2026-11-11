@@ -53,3 +53,9 @@ AWS stays in `docs/AWS_PLAN.md`. The owner must approve any account change after
 Date: 2026-11-10
 
 The Cloud Agent image has Node 22 and Python 3.12. The web app uses Next.js 16.4.6 with the App Router. The API uses FastAPI and the vision stack named in the project brief: OpenCV, NumPy, scikit-image, Pillow.
+
+## D10. First public site is the explanation, not the analysis API
+
+Date: 2026-11-11
+
+The Next.js pages can be hosted on Vercel by themselves. The FastAPI and OpenCV service stays local until a measurement is ready to run for a user. Putting the computer-vision process on a host now would add cost and a deployment without a result to serve. `vercel.json` sets the project root to `apps/web`. No Vercel project is created from the repository until the owner connects the GitHub account.
