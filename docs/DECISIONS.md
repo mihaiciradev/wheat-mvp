@@ -58,4 +58,4 @@ The Cloud Agent image has Node 22 and Python 3.12. The web app uses Next.js 16.4
 
 Date: 2026-11-11
 
-The Next.js pages can be hosted on Vercel by themselves. The FastAPI and OpenCV service stays local until a measurement is ready to run for a user. Putting the computer-vision process on a host now would add cost and a deployment without a result to serve. `vercel.json` sets the project root to `apps/web`. No Vercel project is created from the repository until the owner connects the GitHub account.
+The Next.js pages can be hosted on Vercel by themselves. The FastAPI and OpenCV service stays local until a measurement is ready to run for a user. Putting the computer-vision process on a host now would add cost and a deployment without a result to serve. The Vercel project root is `apps/web`, set in the dashboard. `vercel.json` cannot contain `rootDirectory`.
