@@ -39,6 +39,9 @@ datasets/derived/
 !docs/**/*.png
 !docs/**/*.svg
 
+# Web-sized research figures. The original flight stays out of Git.
+!apps/web/research-media/*.jpg
+
 # One public Mavic 3M capture, so a sample can be inspected. Nothing else.
 !datasets/samples/mavic3m/*.jpg
 !datasets/samples/mavic3m/*.jpeg

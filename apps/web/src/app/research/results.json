@@ -1,0 +1,124 @@
+{
+  "source": "Pix4D DJI Mavic 3 Multispectral example, winter barley, 5 April 2024. These are not Fenia plots.",
+  "captures": [
+    {
+      "id": "DJI_20240405154600_0001",
+      "role": "ground_level",
+      "altitude_m": 0.76,
+      "rgb": "DJI_20240405154600_0001-rgb.jpg",
+      "exg": "DJI_20240405154600_0001-exg.jpg",
+      "vegetation_share": 0.0567,
+      "bands": [
+        {
+          "key": "G",
+          "name": "Green",
+          "clipped": 0.0853
+        },
+        {
+          "key": "R",
+          "name": "Red",
+          "clipped": 0.0445
+        },
+        {
+          "key": "RE",
+          "name": "RedEdge",
+          "clipped": 0.0661
+        },
+        {
+          "key": "NIR",
+          "name": "NIR",
+          "clipped": 0.0505
+        }
+      ],
+      "nominal_cm_per_px": 0.02,
+      "two_metre_px": 9803
+    },
+    {
+      "id": "DJI_20240405154706_0001",
+      "role": "aerial",
+      "altitude_m": 90.006,
+      "rgb": "DJI_20240405154706_0001-rgb.jpg",
+      "exg": "DJI_20240405154706_0001-exg.jpg",
+      "vegetation_share": 0.4394,
+      "bands": [
+        {
+          "key": "G",
+          "name": "Green",
+          "clipped": 0.0
+        },
+        {
+          "key": "R",
+          "name": "Red",
+          "clipped": 0.0
+        },
+        {
+          "key": "RE",
+          "name": "RedEdge",
+          "clipped": 0.0
+        },
+        {
+          "key": "NIR",
+          "name": "NIR",
+          "clipped": 0.0
+        }
+      ],
+      "nominal_cm_per_px": 2.42,
+      "two_metre_px": 83,
+      "false_color": "DJI_20240405154706_0001-false.jpg",
+      "regions": [
+        {
+          "name": "green cover",
+          "index_mean": 0.403
+        },
+        {
+          "name": "bare soil",
+          "index_mean": -0.237
+        }
+      ],
+      "scale": "DJI_20240405154706_0001-scale.jpg"
+    },
+    {
+      "id": "DJI_20240405154711_0002",
+      "role": "aerial",
+      "altitude_m": 90.021,
+      "rgb": "DJI_20240405154711_0002-rgb.jpg",
+      "exg": "DJI_20240405154711_0002-exg.jpg",
+      "vegetation_share": 0.4831,
+      "bands": [
+        {
+          "key": "G",
+          "name": "Green",
+          "clipped": 0.0
+        },
+        {
+          "key": "R",
+          "name": "Red",
+          "clipped": 0.0
+        },
+        {
+          "key": "RE",
+          "name": "RedEdge",
+          "clipped": 0.0
+        },
+        {
+          "key": "NIR",
+          "name": "NIR",
+          "clipped": 0.0
+        }
+      ],
+      "nominal_cm_per_px": 2.42,
+      "two_metre_px": 83,
+      "false_color": "DJI_20240405154711_0002-false.jpg",
+      "regions": [
+        {
+          "name": "green cover",
+          "index_mean": 0.541
+        },
+        {
+          "name": "bare soil",
+          "index_mean": -0.279
+        }
+      ]
+    }
+  ]
+}

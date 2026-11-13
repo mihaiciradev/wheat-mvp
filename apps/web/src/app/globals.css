@@ -160,6 +160,100 @@ h1 {
   font-size: 0.9rem;
 }
 
+.research h1 {
+  max-width: 16ch;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+.research p {
+  max-width: 40rem;
+}
+
+.pin-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: end;
+  margin-top: 1.4rem;
+}
+
+.pin-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #b8ffe4;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pin-form input {
+  width: 7rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(184, 255, 228, 0.7);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: 0.2em;
+}
+
+.pin-form button {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(184, 255, 228, 0.7);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.pin-form button:hover {
+  background: rgba(184, 255, 228, 0.1);
+}
+
+.pin-error {
+  color: #ffd0d0;
+}
+
+.capture {
+  margin-top: 2.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid rgba(184, 255, 228, 0.35);
+}
+
+.capture h2 {
+  margin: 1rem 0 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 620;
+}
+
+.stat {
+  color: #b8ffe4;
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.figure-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figure-grid figcaption {
+  margin-top: 0.35rem;
+  color: #b7d4c8;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 800px) {
+  .figure-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   main {
     padding-top: 4rem;

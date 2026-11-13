@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [{ href: "/approach", label: "Technical approach" }];
+const links = [
+  { href: "/approach", label: "Technical approach" },
+  { href: "/research", label: "Research" },
+];
 
 export function SiteHeader() {
   const pathname = usePathname();
