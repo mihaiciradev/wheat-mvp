@@ -30,6 +30,24 @@
           "clipped": 0.0505
         }
       ],
+      "raw_bands": [
+        {
+          "key": "G",
+          "file": "DJI_20240405154600_0001-raw-G.jpg"
+        },
+        {
+          "key": "R",
+          "file": "DJI_20240405154600_0001-raw-R.jpg"
+        },
+        {
+          "key": "RE",
+          "file": "DJI_20240405154600_0001-raw-RE.jpg"
+        },
+        {
+          "key": "NIR",
+          "file": "DJI_20240405154600_0001-raw-NIR.jpg"
+        }
+      ],
       "nominal_cm_per_px": 0.02,
       "two_metre_px": 9803
     },
@@ -60,6 +78,24 @@
           "key": "NIR",
           "name": "NIR",
           "clipped": 0.0
+        }
+      ],
+      "raw_bands": [
+        {
+          "key": "G",
+          "file": "DJI_20240405154706_0001-raw-G.jpg"
+        },
+        {
+          "key": "R",
+          "file": "DJI_20240405154706_0001-raw-R.jpg"
+        },
+        {
+          "key": "RE",
+          "file": "DJI_20240405154706_0001-raw-RE.jpg"
+        },
+        {
+          "key": "NIR",
+          "file": "DJI_20240405154706_0001-raw-NIR.jpg"
         }
       ],
       "nominal_cm_per_px": 2.42,
@@ -104,6 +140,24 @@
           "key": "NIR",
           "name": "NIR",
           "clipped": 0.0
+        }
+      ],
+      "raw_bands": [
+        {
+          "key": "G",
+          "file": "DJI_20240405154711_0002-raw-G.jpg"
+        },
+        {
+          "key": "R",
+          "file": "DJI_20240405154711_0002-raw-R.jpg"
+        },
+        {
+          "key": "RE",
+          "file": "DJI_20240405154711_0002-raw-RE.jpg"
+        },
+        {
+          "key": "NIR",
+          "file": "DJI_20240405154711_0002-raw-NIR.jpg"
         }
       ],
       "nominal_cm_per_px": 2.42,

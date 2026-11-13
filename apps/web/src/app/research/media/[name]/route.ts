@@ -8,10 +8,24 @@ import results from "../../results.json";
 export const dynamic = "force-dynamic";
 
 const ALLOWED = new Set<string>();
-for (const capture of results.captures) {
-  for (const name of [capture.rgb, capture.exg, capture.false_color, capture.scale]) {
-    if (name) {
-      ALLOWED.add(name);
+collectNames(results, ALLOWED);
+
+function collectNames(value: unknown, into: Set<string>): void {
+  if (typeof value === "string") {
+    if (value.endsWith(".jpg")) {
+      into.add(value);
+    }
+    return;
+  }
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      collectNames(item, into);
+    }
+    return;
+  }
+  if (value !== null && typeof value === "object") {
+    for (const item of Object.values(value)) {
+      collectNames(item, into);
     }
   }
 }
