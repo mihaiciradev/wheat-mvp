@@ -65,3 +65,9 @@ The Next.js pages can be hosted on Vercel by themselves. The FastAPI and OpenCV 
 Date: 2026-11-11
 
 `fenia.ro` is the company site. The landing page describes field measurements from photographs and does not name a crop. Sunflower and wheat are named only on Technical approach. The wheat microplot work remains the first measurement product, and later crops reuse that approach.
+
+## D12. Mavic 3M files are an input, not a software dependency
+
+Date: 2026-11-13
+
+The spectral enterprise aircraft is the Mavic 3 Multispectral, including the EU model. DJI Pilot 2 flies it. DJI Terra Agriculture is the DJI map product. FlightHub 2 is not used, because DJI excludes this aircraft. Fenia reads exported images and does not require a DJI license to run.
