@@ -12,6 +12,6 @@ Only items that change the next milestone are listed. Row spacing and row count 
 ## Explicitly deferred
 
 - Exact row count and row spacing, until Phase 2.
-- Drone model and DJI software, until a pilot needs aerial images.
+- Flight height and overlap for the Mavic 3M over a 2 m plot. The aircraft and the software roles are recorded in `docs/DRONE.md`. Public Mavic 3M photos are not a substitute for our plots.
 - AWS credit balance, expiration, and eligible services, until Phase 5.
 - Whether one photo resolves individual plants, until a counting experiment is justified.
