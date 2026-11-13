@@ -38,3 +38,13 @@ datasets/derived/
 # Keep documentation diagrams and empty placeholders if they are added later.
 !docs/**/*.png
 !docs/**/*.svg
+
+# One public Mavic 3M capture, so a sample can be inspected. Nothing else.
+!datasets/samples/mavic3m/*.jpg
+!datasets/samples/mavic3m/*.jpeg
+!datasets/samples/mavic3m/*.JPG
+!datasets/samples/mavic3m/*.JPEG
+!datasets/samples/mavic3m/*.tif
+!datasets/samples/mavic3m/*.tiff
+!datasets/samples/mavic3m/*.TIF
+!datasets/samples/mavic3m/*.TIFF
