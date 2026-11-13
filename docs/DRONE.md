@@ -33,4 +33,6 @@ These are real Mavic 3M files. They are not our microplots, and they are not a w
 
 The full archives were not downloaded. A 2 m plot is a poor fit to a 90 m survey photo. From the published sensor size and field of view, a rough scale is about 2.5 cm per RGB pixel at 90 m, and about 4 cm per multispectral pixel. The same 2 m plot is then only about 80 RGB pixels across. That can support a coarse cover estimate. It is a weak basis for seedling gaps or plant counts. A lower pass, on the order of 30 m, is the flight to try when the weather allows, with the whole plot in frame and the plot edges visible.
 
+`wheat_vision.capture` reads one shutter group and refuses it as a microplot measurement. It keeps each spectral file as its own 16-bit image, and it does not compute an index. A relative altitude under 3 m is labeled ground-level, which is how a panel photo is taken. That label does not detect the panel. `scripts/inspect_capture.py` prints the result for a folder.
+
 Do not commit those downloaded flights. Keep them outside Git if someone processes them locally.
