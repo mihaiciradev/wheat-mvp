@@ -35,6 +35,6 @@ The full archives were not downloaded. A 2 m plot is a poor fit to a 90 m survey
 
 `wheat_vision.capture` reads one shutter group and refuses it as a microplot measurement. It keeps each spectral file as its own 16-bit image, and it does not compute an index. A relative altitude under 3 m is labeled ground-level, which is how a panel photo is taken. That label does not detect the panel. `scripts/inspect_capture.py` prints the result for a folder.
 
-`/research` shows Excess Green and a relative near-infrared index on three frames from the Pix4D example. The page is behind a server-side PIN. The figures are web-sized copies, and the original flight is not part of that page.
+`/research` is in Romanian. For each of three Pix4D example frames it shows the camera files, what the code did, and the Excess Green or relative-index result. The page is behind a server-side PIN. The figures are web-sized copies, and the original flight is not part of that page.
 
 Do not commit those downloaded flights. Keep them outside Git if someone processes them locally.

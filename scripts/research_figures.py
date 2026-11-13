@@ -71,6 +71,7 @@ def _one(sample: Path, out: Path, summary) -> dict:
             {"key": band.key, "name": band.name, "clipped": round(band.clipped_fraction, 4)}
             for band in summary.bands
         ],
+        "raw_bands": _raw_bands(sample, out, capture_id),
     }
     if summary.nominal_metres_per_pixel is not None:
         record["nominal_cm_per_px"] = round(summary.nominal_metres_per_pixel * 100, 2)
@@ -85,6 +86,19 @@ def _one(sample: Path, out: Path, summary) -> dict:
             record["scale"] = f"{capture_id}-scale.jpg"
             _save(out / record["scale"], _scale_crop(rgb, record["two_metre_px"]))
     return record
+
+
+def _raw_bands(sample: Path, out: Path, capture_id: str) -> list[dict[str, str]]:
+    """Screen copies of the untouched 16-bit bands. Stretch is for display only."""
+    saved = []
+    for key in ("G", "R", "RE", "NIR"):
+        path = sample / f"{capture_id}_MS_{key}.TIF"
+        values = np.asarray(Image.open(path)).astype(np.float32)
+        shown = _stretch(values)
+        filename = f"{capture_id}-raw-{key}.jpg"
+        _save(out / filename, np.dstack([shown, shown, shown]))
+        saved.append({"key": key, "file": filename})
+    return saved
 
 
 def _excess_green(rgb: np.ndarray) -> tuple[float, np.ndarray]:
